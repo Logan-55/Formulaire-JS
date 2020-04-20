@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="public/CSS/style.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="container">
+        <h1>Contact</h1>
+        <form id="formContact">
+            <div class="form-group">
+                <label for="companyName">Société<span style="color : red">*</span></label>
+                <input class="form-control" 
+                       id ="companyName" 
+                       type="text" 
+                       name="companyName"
+
+                       required
+                       title="Votre saisie doit contenir au moins un caractère"
+                       placeholder="Saisissez votre nom"
+                >
+            </div>
+            <span id="aideCompanyName"></span>
+            
+            <div class="form-group">
+                <label for="companyCorrespondant">Personne à contacter<span style="color : red">*</span></label>
+                <input id ="companyCorrespondant" 
+                       class="form-control" 
+                       type="text" 
+                       name="companyCorrespondant"
+                       required
+                       title="Votre saisie doit contenir au moins un caractère"
+                       placeholder="Saisissez le nom de la personne à contacter"
+                >
+                <span id="aideCompanyCorrespondant"></span>
+            </div>
+                  
+            <div class="form-group">
+                <label for="companyAddress">Adresse de l'entreprise</label>
+                <textarea id ="companyAddress" 
+                       class="form-control" 
+                       name="companyAddress"
+                       rows="2"
+                >
+                </textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="companyMail">E-mail<span style="color : red">*</span></label>
+                <input id ="companyMail" 
+                       class="form-control" 
+                       type="text" 
+                       name="companyMail"
+                       required
+                       title="Votre saisie doit contenir au moins un '@'"
+                       placeholder="logan.victoire@gmail.com"
+                >
+                <span id="aideCompanyMail"></span>
+            </div>
+            
+            <div class="row">
+                <div class="form-group col-4">
+                    <label for="companyCP">Code Postal<span style="color : red">*</span></label>
+                    <input id ="companyCP" 
+                           class="form-control" 
+                           type="text" 
+                           name="companyCP"
+                           required
+                           title="Votre saisie doit contenir 5 chiffres"
+                           placeholder="80000"
+                    >
+                    <span id="aideCompanyCP"></span>
+                </div>
+                
+                <div class="form-group col-8">
+                    <label for="companyCity">Ville<span style="color : red">*</span></label>
+                    <input id ="companyCity" 
+                           class="form-control" 
+                           type="text" 
+                           name="companyCity"
+                           required
+                           title="Votre saisie doit contenir au moins un caractère"
+                           placeholder="Saint-Remy-en-Bouzemont-Saint-Genest-et-Isson"
+                    >
+                    <span id="aideCompanyCity"></span>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="companyPhone">Téléphone</label>
+                <input id ="companyPhone" 
+                       class="form-control" 
+                       type="text" 
+                       name="companyPhone"
+                       placeholder="00.00.00.00.00"
+                >
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-4">
+                    <label>Sélectionnez l'environnement technique du projet</label>
+                    <select class="form-control"
+                            id="techEnvironment"
+                    >
+                        <option value="">Choisissez</option>
+                        <option value="Access">Access</option>
+                        <option value="Java">Java</option>
+                        <option value="Delphi">Delphi</option>
+                        <option value="Windev">Windev</option>
+                        <option value="Visual Basic">Visual Basic</option>
+                        <option value="Power Builder">Power Builder</option>
+                        <option value="Internet">Internet</option>
+                        <option value="Intranet">Intranet</option>
+                        <option value="Windows  NT">Windows NT</option>
+                        <option value="Unix">Unix</option>
+                        <option value="SQL Server">SQL Server</option>
+                        <option value="Oracle">Oracle</option>
+                        <option value="Autres...">Autres...</option>
+                    </select>
+                </div>
+                <textarea id="techEnvironmentList"
+                            class="form-control col-8"></textarea>
+            </div>
+
+            <input type="submit" value="Envoyer">
+            <input type="reset" value="Annuler">
+        </form>    
+        
+
+        <script src="public/js/script.js"></script>
+    </body>
+</html>
